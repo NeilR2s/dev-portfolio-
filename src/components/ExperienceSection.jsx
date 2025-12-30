@@ -9,9 +9,11 @@ import {
 
 export default function Experience({portfolioData}) {
     const { experience } = portfolioData; 
+    // const defaultOpen = experience.map(item => `item-${experience.indexOf(item)}`);
     return (
         <section id="experience" className="space-y-6">
             <SectionHeader  title="Professional Experience" />
+            {/* <Accordion type="multiple" className="w-full" defaultValue={defaultOpen}> */}
             <Accordion type="multiple" className="w-full">
                 {experience.map((job, index) => (
                     <AccordionItem value={`item-${index}`} key={index}>

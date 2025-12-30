@@ -13,7 +13,7 @@ import {
 } from "@/components/ui/navigation-menu"
 
 
-export default function Header({portfolioData}) {
+export default function Header({ portfolioData }) {
     const { personalInfo } = portfolioData;
 
     return (
@@ -23,7 +23,7 @@ export default function Header({portfolioData}) {
                     <Avatar className="size-10">
                         <AvatarImage src={personalInfo.iconWhite} alt={personalInfo.name} />
                         <AvatarFallback>{personalInfo.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
-                    </Avatar>   
+                    </Avatar>
                     {/* <span className="font-semibold">{personalInfo.name}</span> */}
                 </div>
 
@@ -44,8 +44,18 @@ export default function Header({portfolioData}) {
                                 Skills
                             </NavigationMenuLink>
                         </NavigationMenuItem>
+                        <NavigationMenuItem>
+                            <NavigationMenuLink
+                                href="/Neil_Artus_Resume.pdf"
+                                target="_blank"
+                                className={navigationMenuTriggerStyle()}
+                            >
+                                Resume
+                            </NavigationMenuLink>
+                        </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
+                
             </div>
         </header>
     );

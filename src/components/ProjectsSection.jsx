@@ -5,74 +5,76 @@ import {
     CardFooter,
     CardHeader,
     CardTitle,
+    CardDescription,
 } from "@/components/ui/card"
 import { Badge } from "./ui/badge";
 import { Button } from "./ui/button";
-import { Github } from "lucide-react";
-import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-} from "@/components/ui/dialog"
+import { Github, ExternalLink } from "lucide-react";
 
 export default function Projects({portfolioData}) {
     return (
-        <section id="projects" className="space-y-6">
+        <section id="projects" className="space-y-4">
             <SectionHeader  title="Projects" />
-            <div className="grid grid-cols-1  gap-6">
+            <div className="grid grid-cols-1 gap-6">
                 {portfolioData.projects.map((project, index) => (
-                    <Card key={index} className="flex flex-col">
-                        <CardHeader>
-                            <CardTitle>{project.title}</CardTitle>
+                    <Card key={index} className="flex flex-col border border-muted hover:border-primary/15 transition-colors h-full">
+                        <CardHeader className="pb-0.5">
+                            <CardTitle className="text-xl">{project.title}</CardTitle>
+
+                            <CardDescription className="text-base text-foreground/80 leading-snug">
+                                {project.summary}
+                            </CardDescription>
                         </CardHeader>
-                        <CardContent className="flex-grow space-y-4">
-                            <ul className="list-disc pl-5 space-y-1 text-sm text-muted-foreground">
-                                {project.description.map((desc, i) => (
-                                    <li key={i}>{desc}</li>
-                                ))}
-                            </ul>
+                        
+                        <CardContent className="flex-grow space-y-6">
+                            <div className="bg-secondary/30 p-3 rounded-md border-l-2 border-primary">
+                                <p className="text-sm font-medium italic text-muted-foreground">
+                                    "{project.impact}"
+                                </p>
+                            </div>
+
                             <div className="flex flex-wrap gap-2">
                                 {project.technologies.map((tech, i) => (
-                                    <Badge variant="secondary" key={i}>{tech}</Badge>
+                                    <Badge variant="secondary" key={i} className="text-xs">
+                                        {tech}
+                                    </Badge>
                                 ))}
                             </div>
                         </CardContent>
-                        <CardFooter>
-                            {/* Per the principles, a link to the code is essential. We use the main GitHub as a fallback. */}
-                            <Button variant="outline" size="sm" asChild>
-                                <a href={portfolioData.personalInfo.github} target="_blank" rel="noreferrer">
-                                    View Code
+
+                        <CardFooter className="gap-3">
+                            {/* Logic to handle specific links */}
+                            {project.githubLink ? (
+                                <Button variant="outline" size="sm" asChild>
+                                    <a href={project.githubLink} target="_blank" rel="noreferrer">
+                                        View Code
+                                        <Github className="ml-2 size-4" />
+                                    </a>
+                                </Button>
+                            ) : (
+                                <Button variant="outline" size="sm" disabled>
+                                    Private
                                     <Github className="ml-2 size-4" />
-                                </a>
-                            </Button>
+                                </Button>
+                            )}
 
-                            {/* Example of using a Dialog for "Learn More" */}
-                            <Dialog>
-                                <DialogTrigger asChild>
-                                    <Button variant="ghost" size="sm" className="ml-2">Learn More</Button>
-                                </DialogTrigger>
-                                <DialogContent className="sm:max-w-xl">
-                                    <DialogHeader>
-                                        <DialogTitle>{project.title}</DialogTitle>
-                                        <DialogDescription asChild>
-                                            <div className="pt-2 flex flex-wrap gap-2">
-                                                {project.technologies.map((tech, i) => (
-                                                    <Badge variant="secondary" key={i}>{tech}</Badge>
-                                                ))}
-                                            </div>
-                                        </DialogDescription>
-                                    </DialogHeader>
-                                    <ul className="list-disc pl-5 space-y-2 text-sm max-h-[60vh] overflow-y-auto pr-4">
-                                        {project.description.map((desc, i) => (
-                                            <li key={i}>{desc}</li>
-                                        ))}
-                                    </ul>
-                                </DialogContent>
-                            </Dialog>
+                            {project.deploymentLink && (
+                                <Button variant="default" size="sm" asChild>
+                                    <a href={project.deploymentLink} target="_blank" rel="noreferrer">
+                                        Visit Site
+                                        <ExternalLink className="ml-2 size-4" />
+                                    </a>
+                                </Button>
+                            )}
 
+                            {project.infoLink && (
+                                <Button variant="default" size="sm" asChild>
+                                    <a href={project.infoLink} target="_blank" rel="noreferrer">
+                                        More Info
+                                        <ExternalLink className="ml-2 size-4" />
+                                    </a>
+                                </Button>
+                            )}
                         </CardFooter>
                     </Card>
                 ))}

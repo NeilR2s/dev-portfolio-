@@ -5,15 +5,15 @@ export const portfolioData = {
     personalInfo: {
         name: "Neil Artus",
         email: "artus.neil.c@gmail.com",
-        summary: "Hello! I am a __Software Developer__ currently working on an internal tool for [Albawani Co.](https://www.albawani.net/) I have written modern software tools for [JG Summit Holdings Inc](https://www.jgsummit.com.ph/), and various [freelance clients](https://www.facebook.com/share/p/1JxdoGKod4/).",
-        location: "Cavite 4017",
+        summary: "Hello! I am a __Software Developer__ currently working on an internal tool for [Albawani Co.](https://www.albawani.net/) I have written modern software tools for [JG Summit Holdings Inc](https://www.jgsummit.com.ph/), and various [freelance clients](https://www.facebook.com/share/p/1JxdoGKod4/). I mainly work with __Python__ for building backend services, AI, and scripting, and __JavaScript__ for web development.",
+        // location: "Cavite 4017",
+        resumePath: "/Neil_Artus_Resume.pdf",
         github: "https://github.com/NeilR2s",
         linkedin: "https://www.linkedin.com/in/neil-artus-652115304/",
         avatar: "https://avatars.githubusercontent.com/u/147031843?s=400&u=067c4715586a2f79f241b60e7ace459a931c0915&v=4",
         iconWhite: blackIcon,
         iconDark: whiteIcon
     },
-    personalStatement: "",
     education: {
         institution: "De La Salle University - Dasmariñas",
         degree: "Bachelor of Science in Computer Science with Specialization in Intelligent Systems",
@@ -31,7 +31,7 @@ export const portfolioData = {
         {
             company: "JG Summit Holdings Inc.",
             role: "GenAI Research Intern",
-            date: "2025",
+            date: "June 2025 - August 2025",
             responsibilities: [
                 "Developed and deployed a full-stack generative AI web application with seamless data pipelines for internal use",
                 "Collaborated with an Agile team to iterate and produce a working proof of concept in a fast-paced environment",
@@ -43,7 +43,7 @@ export const portfolioData = {
         {
             company: "Albawani Co.",
             role: "Software Developer (Pro Bono, Internal Tool)",
-            date: "2025",
+            date: "August 2025 - December 2025",
             responsibilities: [
                 "Developed and deployed a full-stack generative AI web application with seamless data pipelines for internal use",
                 "Collaborated with an Agile team to iterate and produce a working proof of concept in a fast-paced environment",
@@ -55,7 +55,7 @@ export const portfolioData = {
         {
             company: "Freelance (LPU-Cavite Research Project)",
             role: "Software Developer",
-            date: "2025",
+            date: "March 2025 - April 2025",
             responsibilities: [
                 "Presented at LPU - Cavite Innovex 2025 Colloquium and awarded COESCA research of the year",
                 "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using Tensorflow for osteoarthritis detection.",
@@ -71,6 +71,7 @@ export const portfolioData = {
             "Flask",
             "FastAPI",
             "LangChain",
+            "Ollama",
             "Tensorflow",
             "Pandas",
             "PyTorch"
@@ -85,42 +86,39 @@ export const portfolioData = {
             "Pinecone"
         ]
     },
-    projects: [
+    projects : [
         {
-            title: "MediSeen (Capstone Project)",
-            description: [
-                "Led a team using PyTorch to develop an AI-powered progressive web application providing clinical decision support",
-                "Engineered a microservice architecture using industry-standard cloud tools on Azure and GCP, which enabled an average response latency of 98 ms for database queries, and average response latency of 2000 ms for AI tasks",
-                "Developed a responsive viewport for mobile using React and Tailwind; increased system usability score by 15%.",
-                "Implemented security features by using FastAPI and routing traffic to a Cloudflare DNS Tunnel."
-            ],
-            technologies: ["PyTorch", "Azure", "GCP", "React", "Tailwind", "FastAPI", "Cloudflare"]
-        },
-        {
-            title: "Neural Networks from Scratch",
-            description: [
-                "Built fundamental machine learning algorithms from scratch using JAX; matched the accuracy of existing Python AI frameworks",
-                "Implemented functional programming techniques to enable jit-compiled performance benefits to certain computations, while wrapping the core logic in an OOP wrapper for better developer experience"
-            ],
-            technologies: ["JAX", "Python"]
+            title: "MediSeen",
+            summary: "An AI-powered Progressive Web Application (PWA) providing real-time clinical decision support.",
+            impact: "Reduced average request latency to 98ms via microservices and increased system usability scores by 15%.",
+            technologies: ["PyTorch", "Azure", "GCP", "React", "Tailwind", "FastAPI", "Cloudflare"],
+            deploymentLink: "https://www.mediseen.site/",
+            githubLink: null,
         },
         {
             title: "Formal Language Compiler",
-            description: [
-                "Built a web compiler using Flask and Javascript for visualizing deterministic formal languages.",
-                "Wrote the core algorithm in Python to accurately simulate Deterministic Finite Automata, processing input strings against complex state transition tables.",
-                "Ensured code coverage by using pytest to ensure reproducibility and that the compiler works as formally defined"
-            ],
-            technologies: ["Flask", "Javascript", "Python", "pytest"]
+            summary: "An interactive visualization engine for Deterministic Finite Automata (DFA) and formal languages.",
+            impact: "Ensured 100% algorithmic accuracy for complex state transitions using rigorous Pytest coverage.",
+            technologies: ["Flask", "Javascript", "Python", "pytest"],
+            deploymentLink: "https://nr2s.pythonanywhere.com/",
+            githubLink: "https://github.com/NeilR2s/DFA-Visualizer",
         },
         {
-            title: "GenAI Data Pipeline Scripting and Automation",
-            description: [
-                "Developed a fault-tolerant Gemini API scraping tool in Python, engineering an automatic API key rotation system to effectively manage API quotas and ensure continuous operation while processing and saving data with pandas.",
-                "Built a high-throughput synthetic image generator for OCR training, leveraging Python's multiprocessing library to generate a 300,000-image dataset in parallel, applying randomized distortions like skew and blur.",
-                "Authored a separate data validation script using pandas to parse and clean JSON responses from the API, verifying data integrity by comparing generated content against the source CSV files."
-            ],
-            technologies: ["Python", "Gemini API", "pandas", "multiprocessing"]
+            title: "Bitbit",
+            summary: "A Cold Start 2025 entry featuring a marketplace frontend designed to bootstrap user liquidity and transaction flow.",
+            impact: "Built a responsive, high-performance Progressive Web Application (PWA) from scratch using React and Tailwind CSS.",
+            technologies: ["React", "Tailwind"],
+            deploymentLink: "https://cold-start-marketplace.vercel.app/",
+            githubLink: "https://github.com/NeilR2s/cold-start-marketplace",
+        },
+        {
+            title: "Thermal Camera Osteoarthritis Detector",
+            summary: "An IoT-integrated deep learning solution utilizing thermal imaging for early osteoarthritis detection.",
+            impact: "Awarded 'Research of the Year' at the LPU-Cavite Innovex 2025 Colloquium.",
+            technologies: ["Python", "Tensorflow", "Numpy"],
+            deploymentLink: null,
+            githubLink: "https://github.com/NeilR2s/scripts",
+            infoLink: "https://www.facebook.com/share/p/1D5AdFLZzQ/"
         }
     ]
 };

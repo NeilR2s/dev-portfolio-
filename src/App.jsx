@@ -11,15 +11,22 @@ export default function App() {
     return (
         <div className="font-sans bg-background text-foreground min-h-screen">
             <Header portfolioData={portfolioData} />
-            <main className="container max-w-7xl mx-auto px-10 py-8 md:py-16">
+            <a
+                href="#main"
+                className="sr-only focus:not-sr-only focus:fixed focus:top-2 focus:left-2 z-50 bg-background px-3 py-2 rounded"
+            >
+                Skip to content
+            </a>
+
+            <main id="main" className="container max-w-7xl mx-auto px-10 py-8 md:py-16">
                 <div className="space-y-16 md:space-y-24">
-                    <Hero portfolioData={portfolioData}/>
+                    <Hero portfolioData={portfolioData} />
                     <Experience portfolioData={portfolioData} />
                     <Projects portfolioData={portfolioData} />
                     <Skills portfolioData={portfolioData} />
                 </div>
             </main>
-            <Footer portfolioData={portfolioData}/>
+            <Footer portfolioData={portfolioData} />
         </div>
     )
 }
