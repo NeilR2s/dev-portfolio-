@@ -6,7 +6,6 @@ export const portfolioData = {
         name: "Neil Artus",
         email: "artus.neil.c@gmail.com",
         summary: "Hello! I am a __Software Developer__ currently working on an internal tool for [Albawani Co.](https://www.albawani.net/) I have written modern software tools for [JG Summit Holdings Inc](https://www.jgsummit.com.ph/), and various [freelance clients](https://www.facebook.com/share/p/1JxdoGKod4/). I mainly work with __Python__ for building backend services, AI, and scripting, and __JavaScript__ for web development.",
-        // location: "Cavite 4017",
         resumePath: "/Neil_Artus_Resume.pdf",
         github: "https://github.com/NeilR2s",
         linkedin: "https://www.linkedin.com/in/neil-artus-652115304/",
@@ -29,13 +28,13 @@ export const portfolioData = {
     },
     experience: [
         {
-            company: "Freelance (LPU-Cavite Research Project)",
-            role: "Software Developer",
-            date: "March 2025 - April 2025",
+            company: "Albawani Co.",
+            role: "Software Developer (Pro Bono)",
+            date: "August 2025 - December 2025",
             responsibilities: [
-                "Presented at LPU - Cavite Innovex 2025 Colloquium and awarded COESCA research of the year",
-                "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using Tensorflow for osteoarthritis detection.",
-                "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera."
+                "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking.",
+                "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python and Flask.",
+                "Implemented secure authentication and role-based access control using Microsoft Entra ID to protect sensitive employee data.",
             ]
         },
         {
@@ -51,13 +50,13 @@ export const portfolioData = {
             ]
         },
         {
-            company: "Albawani Co.",
-            role: "Software Developer (Pro Bono)",
-            date: "August 2025 - December 2025",
+            company: "Freelance (LPU-Cavite Research Project)",
+            role: "Software Developer",
+            date: "March 2025 - April 2025",
             responsibilities: [
-                "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking.",
-                "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python and Flask.",
-                "Implemented secure authentication and role-based access control using Microsoft Entra ID to protect sensitive employee data.",
+                "Presented at LPU - Cavite Innovex 2025 Colloquium and awarded COESCA research of the year",
+                "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using Tensorflow for osteoarthritis detection.",
+                "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera."
             ]
         },
 

@@ -25,27 +25,27 @@ export default function Hero({ portfolioData }) {
                 </div>
                 <div className="flex flex-wrap pt-2 space-x-2 space-y-1">
 
-                    <Button variant="default" size="sm">
+                    <Button variant="default" size="default">
                         <a href={personalInfo.resumePath} target="_blank" rel="noreferrer" download={personalInfo.name + " Resume.pdf"}>
                         Download Resume
                         </a>
                     </Button>
 
-                    <Button variant="ghost" size="sm" asChild>
+                    <Button variant="ghost" size="default" asChild>
                         <a href={`mailto:${personalInfo.email}`} target="_blank" rel="noreferrer">
                             <Mail className="size-4" />
                             <span className="ml-2">{personalInfo.email}</span>
                         </a>
                     </Button>
 
-                    <Button variant="ghost" size="sm" asChild>
+                    <Button variant="ghost" size="default" asChild>
                         <a href={personalInfo.github} target="_blank" rel="noreferrer">
                             <Github className="size-4" />
                             <span className="ml-2">GitHub</span>
                         </a>
                     </Button>
 
-                    <Button variant="ghost" size="sm" asChild>
+                    <Button variant="ghost" size="default" asChild>
                         <a href={personalInfo.linkedin}>
                             <Linkedin className="size-4" />
                             <span className="ml-2">Linkedin</span>
