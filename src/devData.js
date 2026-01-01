@@ -42,14 +42,12 @@ export const portfolioData = {
         },
         {
             company: "Albawani Co.",
-            role: "Software Developer (Pro Bono, Internal Tool)",
+            role: "Software Developer (Pro Bono)",
             date: "August 2025 - December 2025",
             responsibilities: [
-                "Developed and deployed a full-stack generative AI web application with seamless data pipelines for internal use",
-                "Collaborated with an Agile team to iterate and produce a working proof of concept in a fast-paced environment",
-                "Conducted rigorous analysis of model accuracy to ensure alignment with business requirements.",
-                "Engineered a modular application architecture to improve maintainability and simplify the team turnover process.",
-                "Reduced future development time by writing comprehensive documentation and conducting knowledge transfer sessions."
+                "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking.",
+                "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python and Flask.",
+                "Implemented secure authentication and role-based access control using Microsoft Entra ID to protect sensitive employee data.",
             ]
         },
         {

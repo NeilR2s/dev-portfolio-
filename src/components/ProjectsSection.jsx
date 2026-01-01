@@ -15,13 +15,14 @@ export default function Projects({portfolioData}) {
     return (
         <section id="projects" className="space-y-4">
             <SectionHeader  title="Projects" />
-            <div className="grid grid-cols-1 gap-6">
+            <div className="grid grid-cols-[auto, 1fr] gap-6">
                 {portfolioData.projects.map((project, index) => (
                     <Card key={index} className="flex flex-col border border-muted hover:border-primary/15 transition-colors h-full">
+                        
                         <CardHeader className="pb-0.5">
                             <CardTitle className="text-xl">{project.title}</CardTitle>
 
-                            <CardDescription className="text-base text-foreground/80 leading-snug">
+                            <CardDescription className="text-base text-foreground/60 leading-snug">
                                 {project.summary}
                             </CardDescription>
                         </CardHeader>
