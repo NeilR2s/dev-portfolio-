@@ -29,6 +29,16 @@ export const portfolioData = {
     },
     experience: [
         {
+            company: "Freelance (LPU-Cavite Research Project)",
+            role: "Software Developer",
+            date: "March 2025 - April 2025",
+            responsibilities: [
+                "Presented at LPU - Cavite Innovex 2025 Colloquium and awarded COESCA research of the year",
+                "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using Tensorflow for osteoarthritis detection.",
+                "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera."
+            ]
+        },
+        {
             company: "JG Summit Holdings Inc.",
             role: "GenAI Research Intern",
             date: "June 2025 - August 2025",
@@ -50,16 +60,7 @@ export const portfolioData = {
                 "Implemented secure authentication and role-based access control using Microsoft Entra ID to protect sensitive employee data.",
             ]
         },
-        {
-            company: "Freelance (LPU-Cavite Research Project)",
-            role: "Software Developer",
-            date: "March 2025 - April 2025",
-            responsibilities: [
-                "Presented at LPU - Cavite Innovex 2025 Colloquium and awarded COESCA research of the year",
-                "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using Tensorflow for osteoarthritis detection.",
-                "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera."
-            ]
-        }
+
     ],
     skills: {
         languages: ["Python", "Javascript", "Go (Golang)"],
@@ -84,7 +85,7 @@ export const portfolioData = {
             "Pinecone"
         ]
     },
-    projects : [
+    projects: [
         {
             title: "MediSeen",
             summary: "An AI-powered Progressive Web Application (PWA) providing real-time clinical decision support.",
