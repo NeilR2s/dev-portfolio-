@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "bun --bun vite",
+    "build": "bun --bun vite built",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "bun --bun vite preview"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
