@@ -5,8 +5,8 @@ export const portfolioData = {
     personalInfo: {
         name: "Neil Artus",
         email: "artus.neil.c@gmail.com",
-        summary: "Hello! I am a __Software Developer__ currently working on an internal tool for [Albawani Co.](https://www.albawani.net/) I have written modern software tools for [JG Summit Holdings Inc](https://www.jgsummit.com.ph/), and various [freelance clients](https://www.facebook.com/share/p/1JxdoGKod4/). I mainly work with __Python__ for building backend services, AI, and scripting, and __JavaScript__ for web development.",
-        resumePath: "/Neil_Artus_Resume.pdf",
+        summary: "Hello! I am a __Software Developer__ currently working on freelance projects. I have written modern software tools trusted by [JG Summit Holdings Inc](https://www.jgsummit.com.ph/), [Albawani Co.](https://www.albawani.net/) and [Lyceum of the Philippines University](https://www.facebook.com/share/p/1JxdoGKod4/). I mainly work with __Python__ for building backend services, AI, and scripting, and __JavaScript__ for web development.",
+        resumePath: "/Artus-Resume.pdf",
         github: "https://github.com/NeilR2s",
         linkedin: "https://www.linkedin.com/in/neil-artus-652115304/",
         avatar: "https://avatars.githubusercontent.com/u/147031843?s=400&u=067c4715586a2f79f241b60e7ace459a931c0915&v=4",
@@ -27,16 +27,16 @@ export const portfolioData = {
         extraCurriculars: "Secretary - Computer Science Program Council"
     },
     experience: [
-        {
-            company: "Albawani Co.",
-            role: "Software Developer (Pro Bono)",
-            date: "August 2025 - December 2025",
-            responsibilities: [
-                "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking.",
-                "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python and Flask.",
-                "Implemented secure authentication and role-based access control using Microsoft Entra ID to protect sensitive employee data.",
-            ]
-        },
+        // {
+        //     company: "Albawani Co.",
+        //     role: "Software Developer (Pro Bono)",
+        //     date: "August 2025 - December 2025",
+        //     responsibilities: [
+        //         "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking.",
+        //         "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python and Flask.",
+        //         "Implemented secure authentication and role-based access control using Microsoft Entra ID to protect sensitive employee data.",
+        //     ]
+        // },
         {
             company: "JG Summit Holdings Inc.",
             role: "GenAI Research Intern",
@@ -49,16 +49,16 @@ export const portfolioData = {
                 "Reduced future development time by writing comprehensive documentation and conducting knowledge transfer sessions."
             ]
         },
-        {
-            company: "Freelance (LPU-Cavite Research Project)",
-            role: "Software Developer",
-            date: "March 2025 - April 2025",
-            responsibilities: [
-                "Presented at LPU - Cavite Innovex 2025 Colloquium and awarded COESCA research of the year",
-                "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using Tensorflow for osteoarthritis detection.",
-                "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera."
-            ]
-        },
+        // {
+        //     company: "Freelance (LPU-Cavite Research Project)",
+        //     role: "Software Developer",
+        //     date: "March 2025 - April 2025",
+        //     responsibilities: [
+        //         "Presented at LPU - Cavite Innovex 2025 Colloquium and awarded COESCA research of the year",
+        //         "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using Tensorflow for osteoarthritis detection.",
+        //         "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera."
+        //     ]
+        // },
 
     ],
     skills: {
@@ -85,6 +85,15 @@ export const portfolioData = {
         ]
     },
     projects: [
+        {
+            title: "Albawani HR Request Form",
+            summary: "An attendance request form with role-based access control via Microsoft EntraID to simplify attedance report generation. Integrated the system with existing IT infrastructure on Hetzner bare-metal servers.",
+            impact: "August 2025 - December 2025",
+            technologies: ["Azure", "EntraID", "Flask", "Javascript", "TailwindCSS", "Hetzner"],
+            impact: "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking.",
+            deploymentLink: null,
+            githubLink: "https://github.com/NeilR2s/albawani-request-form",
+        },
         {
             title: "MediSeen",
             summary: "An AI-powered Progressive Web Application (PWA) providing real-time clinical decision support.",
