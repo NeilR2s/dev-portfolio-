@@ -1,8 +1,10 @@
 @import "tailwindcss" ;
 @import "tw-animate-css";
 @plugin "@tailwindcss/typography";
+@custom-variant dark (&:where(.dark, .dark *));
 
-@custom-variant dark (&:is(.dark *));
+
+/* @custom-variant dark (&:is(.dark *)); */
 
 /* google-sans-500 - latin */
 @font-face {
@@ -191,6 +193,11 @@
     --shadow-md: 0 4px 8px 0 oklch(0 0 0 / 0.12), inset 0 1px 1px 0 oklch(1 0 0 / 0.08);
     --shadow-lg: 0 12px 24px 0 oklch(0 0 0 / 0.15), inset 0 1.5px 1.5px 0 oklch(1 0 0 / 0.08);
     --shadow-hover: 0 6px 12px 0 oklch(0 0 0 / 0.15), inset 0 1px 1px 0 oklch(1 0 0 / 0.08);
+
+}
+
+.dark img.isDarkable {
+    filter: invert(100%);
 }
 
 @layer base {

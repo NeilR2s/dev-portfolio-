@@ -3,84 +3,82 @@ import whiteIcon from "./assets/neil-white-icon.png"
 
 export const portfolioData = {
     personalInfo: {
-        name: "Neil Artus",
+        name: "Neil Artus", 
         email: "artus.neil.c@gmail.com",
-        summary: "Hello! I am a __Software Developer__ currently working on freelance projects. I have written modern software tools trusted by [JG Summit Holdings Inc](https://www.jgsummit.com.ph/), [Albawani Co.](https://www.albawani.net/) and [Lyceum of the Philippines University](https://www.facebook.com/share/p/1JxdoGKod4/). I mainly work with __Python__ for building backend services, AI, and scripting, and __JavaScript__ for web development.",
+        summary: "Software Engineer specializing in Python backend systems, Progressive Web Applications, and AI-powered applications, with hands-on experience deploying production workloads on Azure and bare-metal infrastructure.",
         resumePath: "/Artus-Resume.pdf",
         github: "https://github.com/NeilR2s",
-        linkedin: "https://www.linkedin.com/in/neil-artus-652115304/",
+        linkedin: "https://www.linkedin.com/in/neil-artus-652115304",
         avatar: "https://avatars.githubusercontent.com/u/147031843?s=400&u=067c4715586a2f79f241b60e7ace459a931c0915&v=4",
-        iconWhite: blackIcon,
-        iconDark: whiteIcon
+        iconWhite: whiteIcon,
+        iconBlack: blackIcon
     },
     education: {
         institution: "De La Salle University - Dasmariñas",
         degree: "Bachelor of Science in Computer Science with Specialization in Intelligent Systems",
-        honors: "Consistent Dean’s Lister (2022-2025)",
+        honors: "GPA 3.5",
         relevantCoursework: [
-            "Object-Oriented Programming",
-            "Data Structures and Algorithms",
-            "Machine Learning",
-            "Databases",
-            "Web Development"
+            "Programming", 
+            "Data Structures and Algorithms", 
+            "Machine Learning", 
+            "Databases", 
+            "Web Development", 
+            "Networking", 
+            "Operating Systems"
         ],
-        extraCurriculars: "Secretary - Computer Science Program Council"
+        extraCurriculars: "Secretary, Codessey Program Head - Computer Science Program Council"
     },
     experience: [
-        // {
-        //     company: "Albawani Co.",
-        //     role: "Software Developer (Pro Bono)",
-        //     date: "August 2025 - December 2025",
-        //     responsibilities: [
-        //         "Simplified internal HR operations by developing an internal tool to automate employee attendance tracking.",
-        //         "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python and Flask.",
-        //         "Implemented secure authentication and role-based access control using Microsoft Entra ID to protect sensitive employee data.",
-        //     ]
-        // },
+        {
+            company: "Albawani Co.",
+            role: "Volunteer Software Engineer",
+            date: "August 2025 - January 2026",
+            responsibilities: [
+                "Developed an internal HR automation tool that generates an attendance summary report for 10,000+ employees.",
+                "Integrated the system with existing IT infrastructure on Hetzner bare-metal servers using Python.",
+                "Implemented authentication and role-based access control using Microsoft Entra ID to protect employee data."
+            ]
+        },
         {
             company: "JG Summit Holdings Inc.",
             role: "GenAI Research Intern",
             date: "June 2025 - August 2025",
             responsibilities: [
-                "Developed and deployed a full-stack generative AI web application with seamless data pipelines for internal use",
-                "Collaborated with an Agile team to iterate and produce a working proof of concept in a fast-paced environment",
-                "Conducted rigorous analysis of model accuracy to ensure alignment with business requirements.",
-                "Engineered a modular application architecture to improve maintainability and simplify the team turnover process.",
-                "Reduced future development time by writing comprehensive documentation and conducting knowledge transfer sessions."
+                "Developed and deployed a full-stack GenAI application for the Treasury Department, utilizing Azure OpenAI and LangChain to automate complex data retrieval tasks.",
+                "Built robust data validation pipelines using SQL, Pandas, and Pydantic, ensuring high-fidelity outputs by programmatically comparing LLM responses against ground-truth scraped data.",
+                "Accelerated the turnover process by engineering a modular architecture and comprehensive documentation, enabling full-time engineers to deploy production code within 3 days of transfer.",
+                "Collaborated with an Agile team to transform raw financial data requirements into a working Proof of Concept (POC), bridging the gap between technical constraints and business needs."
             ]
         },
-        // {
-        //     company: "Freelance (LPU-Cavite Research Project)",
-        //     role: "Software Developer",
-        //     date: "March 2025 - April 2025",
-        //     responsibilities: [
-        //         "Presented at LPU - Cavite Innovex 2025 Colloquium and awarded COESCA research of the year",
-        //         "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using Tensorflow for osteoarthritis detection.",
-        //         "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera."
-        //     ]
-        // },
-
+        {
+            company: "Lyceum of the Philippines University - Cavite",
+            role: "Embedded AI Developer",
+            date: "March 2025 - June 2025",
+            responsibilities: [
+                "Coordinated with a non-technical team to train a Convolutional Neural Network based on MobileNet architecture using TensorFlow for osteoarthritis detection.",
+                "Wrote a Python script to run inference on a Raspberry Pi 5 connected to a thermal camera.",
+                "Awarded COESCA Research of the Year at LPU-Cavite Innovex 2025 Colloquium."
+            ]
+        }
     ],
     skills: {
-        languages: ["Python", "Javascript", "Go (Golang)"],
+        languages: ["Python", "JavaScript"],
         frameworks: [
-            "React",
-            "Tailwind",
-            "Flask",
-            "FastAPI",
-            "LangChain",
-            "Ollama",
-            "Tensorflow",
-            "Pandas",
-            "PyTorch"
+            "FastAPI", 
+            "Flask", 
+            "React", 
+            "Tailwind CSS", 
+            "TensorFlow", 
+            "PyTorch", 
+            "LangChain"
         ],
         cloudTools: [
-            "Azure",
-            "Google Cloud",
-            "Vercel",
-            "Firebase",
-            "Cloudflare",
-            "Hetzner",
+            "Azure", 
+            "Google Cloud", 
+            "Hetzner", 
+            "Nginx", 
+            "Docker", 
+            "VertexAI", 
             "Pinecone"
         ]
     },

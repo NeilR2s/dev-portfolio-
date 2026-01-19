@@ -13,7 +13,7 @@ export default function Hero({ portfolioData }) {
     return (
         <section id="about" className="flex flex-col md:flex-row gap-8 md:gap-12 items-center justify-center space-x-6">
             <Avatar className="size-30 md:size-40 border-0 border-primary/10">
-                <AvatarImage src={personalInfo.iconWhite} alt={personalInfo.name} />
+                <AvatarImage class="isDarkable" src={personalInfo.iconBlack} alt={personalInfo.name} />
                 <AvatarFallback className="text-4xl">
                     {personalInfo.name.split(' ').map(n => n[0]).join('')}
                 </AvatarFallback>

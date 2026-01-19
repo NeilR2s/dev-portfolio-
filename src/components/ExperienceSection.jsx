@@ -17,10 +17,10 @@ export default function Experience({portfolioData}) {
                         <AccordionTrigger>
                             <div className="flex flex-col md:flex-row justify-between md:items-center w-full pr-4 gap-2">
                                 <div className="text-left min-w-0">
-                                    <h3 className="font-semibold text-sm">{job.role}</h3>
-                                    <p className="text-sm text-muted-foreground">{job.company}</p>
+                                    <h3 className="font-normal text-base">{job.role}</h3>
+                                    <p className="font-normal text-sm text-muted-foreground">{job.company}</p>
                                 </div>
-                                <p className="text-sm text-muted-foreground md:text-right flex-shrink-0">{job.date}</p>
+                                <p className="text-sm text-muted-foreground md:text-right shrink-0">{job.date}</p>
                             </div>
                         </AccordionTrigger>
                         <AccordionContent className="pt-4">

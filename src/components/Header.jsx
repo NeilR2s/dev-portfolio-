@@ -12,16 +12,18 @@ import {
     navigationMenuTriggerStyle
 } from "@/components/ui/navigation-menu"
 
+import { portfolioData } from "@/devData";
+
 
 export default function Header({ portfolioData }) {
     const { personalInfo } = portfolioData;
 
     return (
-        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60 flex items-center justify-center">
+        <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-backdrop-filter:bg-background/60 flex items-center justify-center">
             <div className="container max-w-7xl h-16 flex items-center justify-between px-10">
                 <div className="flex items-center gap-2">
                     <Avatar className="size-10">
-                        <AvatarImage src={personalInfo.iconWhite} alt={personalInfo.name} />
+                            <AvatarImage class="isDarkable" src={personalInfo.iconBlack} alt={personalInfo.name} />
                         <AvatarFallback>{personalInfo.name.split(' ').map(n => n[0]).join('')}</AvatarFallback>
                     </Avatar>
                     {/* <span className="font-semibold">{personalInfo.name}</span> */}
@@ -46,7 +48,7 @@ export default function Header({ portfolioData }) {
                         </NavigationMenuItem>
                         <NavigationMenuItem>
                             <NavigationMenuLink
-                                href="/Neil_Artus_Resume.pdf"
+                                href={portfolioData.personalInfo.resumePath}
                                 target="_blank"
                                 className={navigationMenuTriggerStyle()}
                             >
@@ -55,7 +57,7 @@ export default function Header({ portfolioData }) {
                         </NavigationMenuItem>
                     </NavigationMenuList>
                 </NavigationMenu>
-                
+
             </div>
         </header>
     );

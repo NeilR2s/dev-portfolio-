@@ -9,7 +9,8 @@ import Footer from './components/Footer.jsx'
 
 export default function App() {
     return (
-        <div className="font-sans bg-background text-foreground min-h-screen">
+
+        <div className={`font-sans bg-background text-foreground min-h-screen `}>
             <Header portfolioData={portfolioData} />
             <a
                 href="#main"
